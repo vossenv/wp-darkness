@@ -15,16 +15,32 @@ get_header(); ?>
     <div id="primary" class="front_page featured-content content-area">
         <main id="main" class="site-main">
 
-            <div id="title-text"><b>Venus DeMars<br>&<br>All The Pretty Horses</b></div>
+            <?php
 
-            <div id="title-img">
-                <?php
-                $img_f = get_theme_file_uri('/img/ATPHcircle-logo.gif');
-                echo '
-                    <img id="front-page-image" src="' . $img_f . '">
-                    '
-                ?>
-            </div>
+                $args = array(
+    //        'post_type' => 'services',
+    //        'post_status' => 'publish',
+                    'posts_per_page' => 10,
+    //        'orderby' => 'title',
+    //        'order' => 'ASC',
+    //        'cat' => 'home',
+                );
+
+                $loop = new WP_Query($args);
+
+                while ($loop->have_posts()) : $loop->the_post();
+
+                    if (has_post_thumbnail()) {
+                        $featured_img = wp_get_attachment_image_src(get_post_thumbnail_id(), 'large');
+                        echo $featured_img[0];
+                    }
+                    print the_title();
+                    the_excerpt();
+                endwhile;
+                wp_reset_postdata();
+
+            ?>
+
 
             <div id="tp-slider-home"></div>
 
@@ -38,15 +54,15 @@ get_header(); ?>
                 <hr>
 
                 <div id="fb_social" class="social_col">
-                    <span class="social-title">Facebook</span>
-                    <div class="fb-page" data-href="https://www.facebook.com/TriggeredPaintz"
-                         data-tabs="timeline" data-width="" data-height="665" data-small-header="false"
-                         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
+                    <span class="social-title">Facebook</span><br/>
+                    <div class="fb-page" data-href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses"
+                         data-tabs="timeline" data-width="600" data-height="665" data-small-header="false"
+                         data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>
                 </div>
-                <div id="instagram_social" class="social_col">
-                    <span class="social-title">Instagram</span>
-                    <?php echo do_shortcode('[wdi_feed id="1"]'); ?>
-                </div>
+<!--                <div id="instagram_social" class="social_col">-->
+<!--                    <span class="social-title">Instagram</span>-->
+<!--                    --><?php //echo do_shortcode('[wdi_feed id="1"]'); ?>
+<!--                </div>-->
             </div>
             <div id="events" class="trans_row">
                 <span class="section-title">Events</span>
@@ -59,34 +75,7 @@ get_header(); ?>
                 <p>Contact us</p>
                 <?php echo do_shortcode('[wpforms id="281"]'); ?>
             </div>
-            <!--            <div id="impressum" class="trans_row">-->
-            <!--                <span class="section-title">Impressum</span>-->
-            <!--                <hr>-->
-            <!--                <div class="impressum-text">-->
-            <!--                    <table id="impressum-table">-->
-            <!--                        <tr>-->
-            <!--                            <td class='field_name'>Rechtsform:</td>-->
-            <!--                            <td>Eingetragener Verein</td>-->
-            <!--                        </tr>-->
-            <!--                        <tr>-->
-            <!--                            <td class='field_name'>Adresse:</td>-->
-            <!--                            <td>TriggeredPain.tz e.V</td>-->
-            <!--                        </tr>-->
-            <!--                        <tr>-->
-            <!--                            <td class='field_name'>Telefon:</td>-->
-            <!--                            <td>12345868</td>-->
-            <!--                        </tr>-->
-            <!--                        <tr>-->
-            <!--                            <td class='field_name'>E-Mail:</td>-->
-            <!--                            <td><a href="mailto:someone@yoursite.com">vorstand@triggeredpaintz.com</a></td>-->
-            <!--                        </tr>-->
-            <!--                        <tr>-->
-            <!--                            <td class='field_name'>Register:</td>-->
-            <!--                            <td>E127491234798</td>-->
-            <!--                        </tr>-->
-            <!--                    </table>-->
-            <!--                </div>-->
-            <!--            </div>-->
+
 
             <?php get_template_part('template-parts/content', 'single'); ?>
 

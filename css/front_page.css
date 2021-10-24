@@ -1,6 +1,6 @@
 :root {
     /*     --accent_green: #83bf0d; */
-    --accent_green: #97BF0D;
+    --accent_green: #941fa5;
     --box_color: white;
     --arrow_size: 50px;
     --pulse_size: 62px;
@@ -101,11 +101,6 @@ hr {
 }
 
 
-html {
-    min-height: 100%;
-    box-shadow: inset 0 0 0 2000px #0f0f0f8a !important;
-}
-
 
 .ms-layer {
     padding-right: 20% !important;
@@ -184,88 +179,6 @@ html {
     border: none;
 }
 
-.player {
-    display: inline-block;
-    min-height: 500px;
-}
-
-
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.flip-card {
-    transition: all 500ms;
-    opacity: 0.7;
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-.flip-card:hover {
-    transition: all 500ms;
-    opacity: 1;
-}
-
-
-.flip-card[flipped] {
-    transition: all 500ms;
-    opacity: 1;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    /*     -webkit-box-shadow: 0 0 5px var(--box_color); */
-    min-height: 500px;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card[flipped] .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    min-height: 500px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-    color: white;
-    transform: rotateY(180deg);
-
-}
-
-#ptable {
-    width: 100%;
-    position: absolute;
-    bottom: -24px;
-    margin-bottom: 0;
-
-}
-
-.player-img {
-    border: solid 2px white;
-    /*     box-shadow: inset 0 0 0 2px var(--box_color);
-        -moz-box-shadow: inset 0 0 2px var(--box_color); */
-}
 
 .wpforms-form {
     display: block;
@@ -401,14 +314,19 @@ html {
 
 .fb-page {
     margin-top: 21px;
+
 }
 
 .social_col {
-    width: 340px;
+
     display: inline-block;
     vertical-align: top;
     padding-top: 20px
 
+}
+
+.fb-page, .fb-social, .social_col {
+    width: 508x;
 }
 
 .social-title {
@@ -420,14 +338,14 @@ html {
 }
 
 
-#fb_social {
+/* #fb_social {
     margin-right: 2.5px;
 
 }
 #instagram_social {
     margin-left: 2.7px;
 }
-
+ */
 .wdi_photo_wrap, .fb-page {
     border: solid 2px #ffffff;
     padding: 0 !important;
