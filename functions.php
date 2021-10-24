@@ -27,10 +27,10 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 add_filter('upload_mimes', 'custom_upload_mimes');
 
 
-function load_js() {
-    wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/tp_page.js', array( 'jquery' ),'',true );
-}
-add_action( 'wp_enqueue_scripts', 'load_js', 999);
+//function load_js() {
+//    wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/tp_page.js', array( 'jquery' ),'',true );
+//}
+//add_action( 'wp_enqueue_scripts', 'load_js', 999);
 
 
 /*Custom Post type start*/

@@ -97,9 +97,9 @@
 
     <?php endif; ?>
 
-    <div id="intersect">
-        .
-    </div>
+<!--    <div id="intersect">-->
+<!--        .-->
+<!--    </div>-->
 
     <div class="content-wrap">
 

@@ -1,8 +1,8 @@
-/* Theme Name: Needled 24/7
-Theme URI: https://github.com/vossenv/needled
+/* Theme Name: Pretty Darkness
+Theme URI: https://github.com/vossenv/wp-darkness
 description: Blogrid Child Theme
 Author: Danimae Vossen Author
-URI: https://github.com/vossenv/needled
+URI: https://github.com/vossenv/wp-darkness
 Template: blogrid
 Version: 1.0.0
 License:
@@ -41,15 +41,10 @@ b, body {
     transition: all var(--time);
     transition-delay: var(--delay);
     height: 80px;
+    width: 80px;
 
 }
 
-.logo-container img[stuck]{
-    -webkit-transition: all var(--time);
-    transition: all var(--time);
-    transition-delay: var(--delay);
-    height: 40px;
-}
 
 .logo-container {
     max-width: 10%;
@@ -122,10 +117,10 @@ nav a:hover, #logo:hover {
     background-attachment: fixed !important;
 }
 
-.site-header {
-    position: fixed !important;
-    top: 0;
-}
+/*.site-header {*/
+/*    position: fixed !important;*/
+/*    top: 0;*/
+/*}*/
 
 #pull, .super-menu-inner {
     visibility: hidden;
