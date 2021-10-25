@@ -146,6 +146,10 @@ b content, body {
     text-align: center;
 }
 
+.ms-container {
+    text-align: left;
+}
+
 article.fbox {
     box-shadow: None;
     background-color: transparent;
@@ -197,7 +201,7 @@ nav a:hover, #logo:hover {
 
 .custom-background {
     background-position: top 700px center !important;
-    background-size: 40% !important;
+    background-size: 70% !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
 }
@@ -231,7 +235,7 @@ nav a:hover, #logo:hover {
     #masthead {
 
         margin-top: 10px;
-        margin-bottom: 50px;
+        /*         margin-bottom: 50px; */
     }
 
 }
@@ -282,7 +286,7 @@ article .entry-content {
 
 #primary {
     width: 100%;
-    margin-top: 10%;
+    /*     margin-top: 10%; */
 }
 
 

@@ -1,5 +1,5 @@
 :root {
-    /*     --accent_green: #83bf0d; */
+    --accent_green: #83bf0d;
     --accent_green: #941fa5;
     --box_color: white;
     --arrow_size: 50px;
@@ -7,6 +7,18 @@
     --arrow_border_rad: 50%;
 }
 
+
+.cff-lightbox-dataContainer {
+    background-color: unset;
+    color: green;
+}
+
+.cff-lightbox-data .cff-lightbox-details .cff-lightbox-facebook {
+    color: #ffffff !important;
+}
+.cff-lightbox-wrapper {
+    margin-top: 150px;
+}
 
 .trans_row {
     margin-left: -5000px;
@@ -20,6 +32,36 @@
     flex-direction: column;
 }
 
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 0 1 30%;
+    border: 2px solid;
+    background-color: black;
+}
+
+.card-text {
+    padding: 10px;
+}
+
+.card img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    /*     border-bottom: solid 2px; */
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff6c6c;
+}
 
 .section-title, .dept-title {
     font-size: 60px;
@@ -97,24 +139,27 @@ hr {
 
 #news, #news-mobile {
     color: white;
-    margin-top: 20%;
+    margin-top: 5%;
+
 }
 
 
 
+
+/*
 .ms-layer {
     padding-right: 20% !important;
     padding-left: 20% !important;
 }
-
+ */
 .ms-slide-layers {
     background: rgba(0, 0, 0, 0.75);
 }
 
-.master-slider-parent {
+/* .master-slider-parent {
     padding-bottom: 10%;
 }
-
+ */
 
 .ms-skin-black-2 .ms-bullet-selected, .ms-skin-black-2 .ms-nav-next, .ms-skin-black-2 .ms-nav-prev {
     border: solid 3px var(--accent_green);
@@ -126,36 +171,41 @@ hr {
     -webkit-box-shadow: 0 0 5px white;
     border-color: white;
 }
-
+/*
 .ms-container, .ms-view {
     overflow: visible !important;
 }
-
-
+ */
+/*
 .ms-slide-bgcont, .ms-slide, .ms-slide-layers {
     border-radius: 10px !important;
 }
-
+ */
 .ms-slide-layers {
     box-shadow: inset 0 0 0 2px var(--box_color);
     -moz-box-shadow: inset 0 0 2px var(--box_color);
 }
 
 .ms-slide {
-    /*     -webkit-box-shadow: 0 0 5px var(--box_color); */
+    -webkit-box-shadow: 0 0 5px var(--box_color);
 }
 
+/*.ms-slide-bgcont img  {*/
+/*    object-fit: cover !important;*/
+/*    width: 500px !important;*/
+/*    margin-left: 363px !important;*/
+/*;*/
+/*}*/
+
+/*.ms-slide-bgcont {*/
+/*    width: unset;*/
+/*}*/
+/*
 #news-mobile {
     display: None;
 }
 
-
-
-.player {
-    margin: 20px;
-}
-
-
+ */
 .field_names tbody {
     border: solid 2px var(--accent_green);
 }
@@ -186,16 +236,16 @@ hr {
 }
 
 
-#kontakt form {
+#contact form {
     display: inline-block;
     width: 800px;
 }
 
-#kontakt{
+#contact{
     text-align: center;
 }
 
-#kontakt p {
+#contact p {
     padding: 0;
     display: inline-block;
     text-transform: None;
@@ -204,8 +254,8 @@ hr {
     max-width: 80%;
 }
 
-#kontakt input,
-#kontakt textarea {
+#contact input,
+#contact textarea {
     background: rgba(0, 0, 0, 0.4);
     border: 2px solid var(--accent_green);
     transition: border 200ms linear;
@@ -216,22 +266,22 @@ hr {
 }
 
 
-#kontakt label {
+#contact label {
     text-align: left;
 }
 
-#kontakt input:focus,
-#kontakt textarea:focus {
+#contact input:focus,
+#contact textarea:focus {
     border: 2px solid white;
 }
 
-#kontakt textarea {
+#contact textarea {
     flex-grow: 3;
     min-height: 50px;
     margin-bottom: 25px;
 }
 
-#kontakt button {
+#contact button {
     background: var(--accent_green);
     color: #ffffff;
     cursor: pointer;
@@ -244,21 +294,21 @@ hr {
 
 }
 
-.wpforms-submit-container, #kontakt button {
+.wpforms-submit-container, #contact button {
     margin-top: -34px !important;
     margin-bottom: 7px !important;
 
 }
 
-#kontakt {
+#contact {
     padding-bottom: 1px;
 }
 
-#kontakt button:hover {
+#contact button:hover {
     color: #000000;
 }
 
-#kontakt button:focus, #kontakt button:active {
+#contact button:focus, #contact button:active {
     background: white;
     color: #000000;
 }
@@ -326,7 +376,7 @@ hr {
 }
 
 .fb-page, .fb-social, .social_col {
-    width: 508x;
+    width: 508px;
 }
 
 .social-title {
@@ -398,15 +448,15 @@ tr, td {
     }
 
 
-    #news {
-        display: None;
-    }
-
+    /*     #news {
+            display: None;
+        }
+     */
     #news-mobile {
         display: block;
     }
 
-    #kontakt form{
+    #contact form{
         width: 90%;
     }
 
