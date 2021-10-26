@@ -20,6 +20,36 @@
     margin-top: 150px;
 }
 
+.cff-album-cover {
+    border: solid 2px #ffffff !important;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.cff-album-cover:hover {
+    border: solid 2px #ff6bd8 !important;
+
+}
+
+.hover-cover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.front_page a {
+    text-decoration: none;
+    color:#ff6bd8
+
+
+}
+
+.front_page a:hover {
+    color:#fffcfe
+
+}
+
 .trans_row {
     margin-left: -5000px;
     margin-right: -5000px;
@@ -39,10 +69,21 @@
     justify-content: space-between;
 }
 
+.card:hover {
+    border: solid 2px #ff6bd8 !important;
+    /*     -webkit-filter: drop-shadow(0px 0px 2px #ffffff);
+        filter:drop-shadow(0px 0px 5px #ffffff) */
+}
+
 .card {
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
     flex: 0 1 30%;
-    border: 2px solid;
+    border: solid 2px #ffffff !important;
     background-color: black;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .card-text {
@@ -51,7 +92,7 @@
 
 .card img {
     height: 300px;
-    width: 100%;
+    width: auto;
     object-fit: cover;
     margin-bottom: 20px;
     /*     border-bottom: solid 2px; */
@@ -60,7 +101,7 @@
 .card-title {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #ff6c6c;
+    color: #ff6bd8;
 }
 
 .section-title, .dept-title {

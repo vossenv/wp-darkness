@@ -21,6 +21,8 @@ html, body {
     height: 100%;
     min-width: 300px;
     min-height: 100%;
+
+
 }
 
 
@@ -121,14 +123,9 @@ b content, body {
     display: block;
     flex: 0 1 auto; /* Default */
 
-
-    /*     transition: background .25s ease-in-out;
-        -moz-transition: background .25s ease-in-out;
-        -webkit-transition: background .25s ease-in-out;
-
-        transition: drop-shadow 1.25s ease-in-out;
-        -moz-transition: drop-shadow 1.25s ease-in-out;
-        -webkit-transition: drop-shadow 1.25s ease-in-out; */
+    transition: all 0.15s ease-in-out;
+    -moz-transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
 
 
 
@@ -136,8 +133,9 @@ b content, body {
 
 #primary-menu .menu-item:hover {
     background-color: #6d1c79;
-    /*     -webkit-filter: drop-shadow(0px 0px 2px #00ff00);
-        filter:drop-shadow(0px 0px 5px #00ff00) */
+    -webkit-filter: drop-shadow(0px 0px 2px #ffffff);
+    filter:drop-shadow(0px 0px 5px #ffffff);
+
 }
 
 
@@ -200,7 +198,7 @@ nav a:hover, #logo:hover {
 }
 
 .custom-background {
-    background-position: top 700px center !important;
+    background-position: top 60% center !important;
     background-size: 70% !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
