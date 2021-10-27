@@ -19,8 +19,10 @@ get_header(); ?>
                 <div id="news" class="trans_row">
                     <span class="section-title">NEWS</span>
                     <hr>
-                    <br><br>
-                    <!--                --><?php //echo do_shortcode('[masterslider id="2"]'); ?>
+
+                    <?php echo do_shortcode('[masterslider id="2"]'); ?>
+                    <?php echo do_shortcode('[masterslider id="3"]'); ?>
+
 
                     <div class="centered">
                         <section class="cards">
@@ -109,8 +111,8 @@ get_header(); ?>
                     <span class="section-title">Contact</span>
                     <hr>
                     <br/>
-                    <p>Contact us</p>
-                    <?php echo do_shortcode('[wpforms id="281"]'); ?>
+<!--                    <p>Contact us</p>-->
+                    <?php echo do_shortcode('[wpforms id="44" title="false"]'); ?>
                 </div>
 
 
