@@ -51,8 +51,8 @@
 }
 
 .master-slider-parent {
-    margin-top: 150px;
-    margin-bottom: 150px;
+    /*     margin-top: 10px; */
+    margin-bottom: -100px;
 }
 
 .trans_row {

@@ -1,4 +1,4 @@
-<?php /* Template Name: Front Page */
+<?php /* Template Name: WIP Front Page */
 
 
 //require get_stylesheet_directory() . '/php/teams.php';
@@ -17,16 +17,17 @@ get_header(); ?>
             <div class="xfront_page">
 
                 <div id="news" class="trans_row">
-                    <span class="section-title">NEWS</span>
+                    <span class="section-title">In progress !!</span>
                     <hr><br/><br/>
-                    <?php echo do_shortcode('[masterslider id="3"]'); ?>
+                    Check back very soon for music, news and more!
+<!--                    --><?php //echo do_shortcode('[masterslider id="3"]'); ?>
                 </div>
-                <div id="photos" class="trans_row">
-                    <span class="section-title">PHOTOS</span>
-                    <hr><br/><br/>
-                    <?php echo do_shortcode('[custom-facebook-feed feed=1]'); ?>
-                </div>
-
+<!--                <div id="photos" class="trans_row">-->
+<!--                    <span class="section-title">PHOTOS</span>-->
+<!--                    <hr><br/><br/>-->
+<!--                    --><?php //echo do_shortcode('[custom-facebook-feed feed=1]'); ?>
+<!--                </div>-->
+<!---->
                 <div id="social" class="trans_row">
                     <span class="section-title">Social</span>
                     <hr>
@@ -43,31 +44,31 @@ get_header(); ?>
                     <!--                    <span class="social-title">Instagram</span>-->
                     <!--                    --><?php //echo do_shortcode('[wdi_feed id="1"]'); ?>
                     <!--                </div>-->
-                </div>
-                <div id="music" class="trans_row">
-                    <span class="section-title">Music</span>
-                    <hr>
-                    <br/><br/>
-                </div>
-                <div id="events" class="trans_row">
-                    <span class="section-title">Events</span>
-                    <hr>
-                    <br/><br/>
-                </div>
-                <div id="bio" class="trans_row">
-                    <span class="section-title">Bio</span>
-                    <hr>
-                </div>
-                <div id="members" class="trans_row">
-                    <span class="section-title">Members</span>
-                    <hr>
-                </div>
-                <div id="contact" class="trans_row">
-                    <span class="section-title">Contact</span>
-                    <hr>
-                    <br/>
-                    <?php echo do_shortcode('[wpforms id="44" title="false"]'); ?>
-                </div>
+<!--                </div>-->
+<!--                <div id="music" class="trans_row">-->
+<!--                    <span class="section-title">Music</span>-->
+<!--                    <hr>-->
+<!--                    <br/><br/>-->
+<!--                </div>-->
+<!--                <div id="events" class="trans_row">-->
+<!--                    <span class="section-title">Events</span>-->
+<!--                    <hr>-->
+<!--                    <br/><br/>-->
+<!--                </div>-->
+<!--                <div id="bio" class="trans_row">-->
+<!--                    <span class="section-title">Bio</span>-->
+<!--                    <hr>-->
+<!--                </div>-->
+<!--                <div id="members" class="trans_row">-->
+<!--                    <span class="section-title">Members</span>-->
+<!--                    <hr>-->
+<!--                </div>-->
+<!--                <div id="contact" class="trans_row">-->
+<!--                    <span class="section-title">Contact</span>-->
+<!--                    <hr>-->
+<!--                    <br/>-->
+<!--                    --><?php //echo do_shortcode('[wpforms id="44" title="false"]'); ?>
+<!--                </div>-->
 <!--                --><?php //get_template_part('template-parts/content', 'single'); ?>
             </div>
 
