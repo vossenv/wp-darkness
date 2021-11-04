@@ -19,16 +19,18 @@ get_header(); ?>
                 <div id="news" class="trans_row">
                     <span class="section-title">NEWS</span>
                     <hr><br/><br/>
-                    <?php echo do_shortcode('[masterslider id="3"]'); ?>
+                    <?php echo do_shortcode('[masterslider alias="front_news_1"]'); ?>
                 </div>
                 <div id="photos" class="trans_row">
                     <span class="section-title">PHOTOS</span>
                     <hr><br/><br/>
-                    <?php echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
-<!--                    --><?php //echo do_shortcode('[modula id="46"]'); ?>
+<!--                    dev-->
+<!--                    --><?php //echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
 
-<!--                    <br/><br/>-->
-<!--                    --><?php //if( function_exists('photo_gallery') ) { photo_gallery(1); } ?>
+<!--                    prod-->
+                    <?php echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
+
+
                 </div>
 
                 <div id="social" class="trans_row">
@@ -79,9 +81,10 @@ get_header(); ?>
                     <span class="section-title">Contact</span>
                     <hr>
                     <br/>
-                    <?php echo do_shortcode('[wpforms id="44" title="false"]'); ?>
+                    Please send us a message on
+                    <a target="_blank" href="https://www.facebook.com/AllThePrettyHorsesBand">Facebook!</a>
+<!--                    --><?php //echo do_shortcode('[wpforms id="45"]'); ?>
                 </div>
-<!--                --><?php //get_template_part('template-parts/content', 'single'); ?>
             </div>
 
         </main><!-- #main -->
