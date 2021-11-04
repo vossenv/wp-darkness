@@ -1,4 +1,4 @@
-<?php /* Template Name: Front Page */
+<?php /* Template Name: WIP Front Page */
 
 
 //require get_stylesheet_directory() . '/php/teams.php';
@@ -17,39 +17,25 @@ get_header(); ?>
             <div class="xfront_page">
 
                 <div id="news" class="trans_row">
-                    <span class="section-title">NEWS</span>
+                    <span class="section-title">In progress !!</span>
                     <hr><br/><br/>
-                    <?php echo do_shortcode('[masterslider alias="front_news_1"]'); ?>
+                    Check back very soon for music, news and more!
+<!--                    --><?php //echo do_shortcode('[masterslider id="3"]'); ?>
                 </div>
-                <div id="photos" class="trans_row">
-                    <span class="section-title">PHOTOS</span>
-                    <hr><br/><br/>
-<!--                    dev-->
-<!--                    --><?php //echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
-
-<!--                    prod-->
-                    <?php echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
-
-
-                </div>
-
+<!--                <div id="photos" class="trans_row">-->
+<!--                    <span class="section-title">PHOTOS</span>-->
+<!--                    <hr><br/><br/>-->
+<!--                    --><?php //echo do_shortcode('[custom-facebook-feed feed=1]'); ?>
+<!--                </div>-->
+<!---->
                 <div id="social" class="trans_row">
                     <span class="section-title">Social</span>
                     <hr>
                     <div id="fb_social" class="social_col">
-<!--                        <span class="social-title"><a target="_blank"-->
-<!--                                                      href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses/">-->
-<!--                                Facebook</a></span><br/>-->
+                        <span class="social-title"><a target="_blank"
+                                                      href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses/">
+                                Facebook</a></span><br/>
                         <div class="fb-page" data-href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses"
-                             data-tabs="timeline" data-width="600" data-height="665" data-small-header="false"
-                             data-colorscheme="dark" data-mobile="false"
-                             data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>
-                    </div>
-                    <div id="fb_social" class="social_col">
-<!--                        <span class="social-title"><a target="_blank"-->
-<!--                                                      href="https://www.facebook.com/AllThePrettyHorsesBand/">-->
-<!--                                Facebook</a></span><br/>-->
-                        <div class="fb-page" data-href="https://www.facebook.com/AllThePrettyHorsesBand"
                              data-tabs="timeline" data-width="600" data-height="665" data-small-header="false"
                              data-colorscheme="dark" data-mobile="false"
                              data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>
@@ -58,8 +44,8 @@ get_header(); ?>
                     <!--                    <span class="social-title">Instagram</span>-->
                     <!--                    --><?php //echo do_shortcode('[wdi_feed id="1"]'); ?>
                     <!--                </div>-->
-                </div>
-                <div id="music" class="trans_row">
+<!--                </div>-->
+<!--                <div id="music" class="trans_row">-->
 <!--                    <span class="section-title">Music</span>-->
 <!--                    <hr>-->
 <!--                    <br/><br/>-->
@@ -81,10 +67,9 @@ get_header(); ?>
                     <span class="section-title">Contact</span>
                     <hr>
                     <br/>
-                    Please send us a message on
-                    <a target="_blank" href="https://www.facebook.com/AllThePrettyHorsesBand">Facebook!</a>
-<!--                    --><?php //echo do_shortcode('[wpforms id="45"]'); ?>
+                    <?php echo do_shortcode('[wpforms id="45"]'); ?>
                 </div>
+<!--                --><?php //get_template_part('template-parts/content', 'single'); ?>
             </div>
 
         </main><!-- #main -->

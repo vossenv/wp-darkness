@@ -24,6 +24,29 @@
 <a class="skip-link screen-reader-text" href="#primary"><?php _e('Skip to content', 'blogrid'); ?></a>
 
 <div id="page" class="site">
+    <?php if (is_front_page()) : ?>
+
+        <!-- Header img -->
+        <?php if (get_header_image()) : ?>
+            <div class="header-div" style="background-image:url(<?php echo esc_url((get_header_image())); ?>)">
+
+                <div class="dark-logo-container">
+                    <?php if (has_custom_logo()) : ?>
+                        <?php the_custom_logo(); ?>
+                    <?php endif; ?>
+                </div>
+
+                <div class="header-title-container">
+                    <div id="h-title-text"><b>Venus DeMars<br>&<br>All The Pretty Horses</b></div>
+                </div>
+
+<!--                <img src="--><?php //echo esc_url((get_header_image())); ?><!--"-->
+<!--                     alt="--><?php //echo esc_attr((get_bloginfo('title'))); ?><!--"/>-->
+            </div>
+        <?php endif; ?>
+        <!-- / Header img -->
+
+    <?php endif; ?>
 
     <header id="masthead" class="sheader site-header clearfix">
         <nav id="primary-site-navigation" class="primary-menu main-navigation clearfix">
@@ -31,16 +54,16 @@
             <a href="#" id="pull" class="smenu-hide toggle-mobile-menu menu-toggle" aria-controls="secondary-menu"
                aria-expanded="false"><?php esc_html_e('Menu', 'blogrid'); ?></a>
             <div class="top-nav-wrapper">
-                <div class="content-wrap">
-                    <div class="logo-container">
-
-                        <?php if (has_custom_logo()) : ?>
-                            <?php the_custom_logo(); ?>
-                        <?php else : ?>
-                            <a class="logofont" href="<?php echo esc_url(home_url('/')); ?>"
-                               rel="home"><?php bloginfo('name'); ?></a>
-                        <?php endif; ?>
-                    </div>
+                <div class="menu-content-wrap">
+<!--                    <div class="logo-container">-->
+<!---->
+<!--                        --><?php //if (has_custom_logo()) : ?>
+<!--                            --><?php //the_custom_logo(); ?>
+<!--                        --><?php //else : ?>
+<!--                            <a class="logofont" href="--><?php //echo esc_url(home_url('/')); ?><!--"-->
+<!--                               rel="home">--><?php //bloginfo('name'); ?><!--</a>-->
+<!--                        --><?php //endif; ?>
+<!--                    </div>-->
                     <div class="center-main-menu">
                         <?php
                         wp_nav_menu(array(
@@ -70,36 +93,6 @@
         </div>
         <div id="mobile-menu-overlay"></div>
     </header>
-
-    <?php if (is_front_page()) : ?>
-
-        <!-- Header img -->
-        <?php if (get_header_image()) : ?>
-            <div class="bottom-header-wrapper">
-                <div class="bottom-header-text">
-                    <?php if (get_theme_mod('header_img_text')) : ?>
-                        <div class="content-wrap">
-                            <div class="bottom-header-title"><?php echo wp_kses_post(get_theme_mod('header_img_text')) ?></div>
-                        </div>
-                    <?php endif; ?>
-                    <?php if (get_theme_mod('header_img_text_tagline')) : ?>
-                        <div class="content-wrap">
-                            <div class="bottom-header-paragraph"><?php echo wp_kses_post(get_theme_mod('header_img_text_tagline')) ?></div>
-                        </div>
-                    <?php endif; ?>
-
-                </div>
-                <img src="<?php echo esc_url((get_header_image())); ?>"
-                     alt="<?php echo esc_attr((get_bloginfo('title'))); ?>"/>
-            </div>
-        <?php endif; ?>
-        <!-- / Header img -->
-
-    <?php endif; ?>
-
-<!--    <div id="intersect">-->
-<!--        .-->
-<!--    </div>-->
 
     <div class="content-wrap">
 
