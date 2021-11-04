@@ -22,11 +22,13 @@ html, body {
     height: 100%;
     min-width: 300px;
     min-height: 100%;
+    background-color: black !important;
 }
+
 
 .site-info a:hover {
     border-bottom: none;
-;
+
 }
 
 .icons img {
@@ -58,8 +60,11 @@ b content, body {
     align-items: center;
     justify-content: space-around;
     min-height: 400px;
-    background-size: cover;
-    border: solid 2px white;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid 0px black;
+    height: 550px;
 }
 
 #h-title-text {
@@ -78,6 +83,7 @@ b content, body {
 
 .dark-logo-container {
     padding-left: 50px;
+    display: none;
 }
 
 .dark-logo-container img {
@@ -108,9 +114,9 @@ b content, body {
 }
 
 .menu-main-container {
-    padding: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    /*     padding: 20px; */
+    /*     padding-left: 20%;
+        padding-right: 20%; */
 }
 
 #masthead {
@@ -215,10 +221,13 @@ nav a:hover, #logo:hover {
 }
 
 .custom-background {
-    background-position: top 60% center !important;
-    background-size: 70% !important;
-    background-repeat: no-repeat !important;
+    background-position: top 70% center !important;
+    /* background-size: 70% !important; */
+    /* background-repeat: no-repeat !important; */
     background-attachment: fixed !important;
+    background-image: url('https://atphband.com/wp-content/uploads/2021/10/grey2ATPHlogo.gif'),  url('https://data.1freewallpapers.com/detail/stars-glare-black-space.jpg') !important;
+    background-size: 60%, 100px !important;
+    background-repeat: no-repeat, repeat !important;
 }
 
 

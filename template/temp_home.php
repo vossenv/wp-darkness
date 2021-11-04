@@ -63,12 +63,12 @@ get_header(); ?>
 <!--                    <span class="section-title">Members</span>-->
 <!--                    <hr>-->
 <!--                </div>-->
-<!--                <div id="contact" class="trans_row">-->
-<!--                    <span class="section-title">Contact</span>-->
-<!--                    <hr>-->
-<!--                    <br/>-->
-<!--                    --><?php //echo do_shortcode('[wpforms id="44" title="false"]'); ?>
-<!--                </div>-->
+                <div id="contact" class="trans_row">
+                    <span class="section-title">Contact</span>
+                    <hr>
+                    <br/>
+                    <?php echo do_shortcode('[wpforms id="45"]'); ?>
+                </div>
 <!--                --><?php //get_template_part('template-parts/content', 'single'); ?>
             </div>
 

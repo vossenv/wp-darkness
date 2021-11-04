@@ -24,17 +24,30 @@ get_header(); ?>
                 <div id="photos" class="trans_row">
                     <span class="section-title">PHOTOS</span>
                     <hr><br/><br/>
-                    <?php echo do_shortcode('[custom-facebook-feed feed=1]'); ?>
+                    <?php echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
+<!--                    --><?php //echo do_shortcode('[modula id="46"]'); ?>
+
+<!--                    <br/><br/>-->
+<!--                    --><?php //if( function_exists('photo_gallery') ) { photo_gallery(1); } ?>
                 </div>
 
                 <div id="social" class="trans_row">
                     <span class="section-title">Social</span>
                     <hr>
                     <div id="fb_social" class="social_col">
-                        <span class="social-title"><a target="_blank"
-                                                      href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses/">
-                                Facebook</a></span><br/>
+<!--                        <span class="social-title"><a target="_blank"-->
+<!--                                                      href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses/">-->
+<!--                                Facebook</a></span><br/>-->
                         <div class="fb-page" data-href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses"
+                             data-tabs="timeline" data-width="600" data-height="665" data-small-header="false"
+                             data-colorscheme="dark" data-mobile="false"
+                             data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>
+                    </div>
+                    <div id="fb_social" class="social_col">
+<!--                        <span class="social-title"><a target="_blank"-->
+<!--                                                      href="https://www.facebook.com/AllThePrettyHorsesBand/">-->
+<!--                                Facebook</a></span><br/>-->
+                        <div class="fb-page" data-href="https://www.facebook.com/AllThePrettyHorsesBand"
                              data-tabs="timeline" data-width="600" data-height="665" data-small-header="false"
                              data-colorscheme="dark" data-mobile="false"
                              data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>
@@ -45,23 +58,23 @@ get_header(); ?>
                     <!--                </div>-->
                 </div>
                 <div id="music" class="trans_row">
-                    <span class="section-title">Music</span>
-                    <hr>
-                    <br/><br/>
-                </div>
-                <div id="events" class="trans_row">
-                    <span class="section-title">Events</span>
-                    <hr>
-                    <br/><br/>
-                </div>
-                <div id="bio" class="trans_row">
-                    <span class="section-title">Bio</span>
-                    <hr>
-                </div>
-                <div id="members" class="trans_row">
-                    <span class="section-title">Members</span>
-                    <hr>
-                </div>
+<!--                    <span class="section-title">Music</span>-->
+<!--                    <hr>-->
+<!--                    <br/><br/>-->
+<!--                </div>-->
+<!--                <div id="events" class="trans_row">-->
+<!--                    <span class="section-title">Events</span>-->
+<!--                    <hr>-->
+<!--                    <br/><br/>-->
+<!--                </div>-->
+<!--                <div id="bio" class="trans_row">-->
+<!--                    <span class="section-title">Bio</span>-->
+<!--                    <hr>-->
+<!--                </div>-->
+<!--                <div id="members" class="trans_row">-->
+<!--                    <span class="section-title">Members</span>-->
+<!--                    <hr>-->
+<!--                </div>-->
                 <div id="contact" class="trans_row">
                     <span class="section-title">Contact</span>
                     <hr>
