@@ -37,7 +37,7 @@ html, body {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(355deg) brightness(106%) contrast(101%);
 }
 
-.icons img:hover{
+.icons img:hover {
     text-decoration: none;
     filter: invert(13%) sepia(98%) saturate(3905%) hue-rotate(287deg) brightness(93%) contrast(88%);
 }
@@ -81,7 +81,7 @@ b content, body {
     flex: 1 1 auto;
 }
 
-.dark-logo-container {
+.dark-logo-container, .custom-logo-link {
     padding-left: 50px;
     display: none;
 }
@@ -90,7 +90,7 @@ b content, body {
     height: 300px;
     width: 300px;
     -webkit-filter: drop-shadow(0px 0px 50px #000000);
-    filter:drop-shadow(0px 0px 50px #000000)
+    filter: drop-shadow(0px 0px 50px #000000)
 
 }
 
@@ -141,8 +141,6 @@ b content, body {
     border-radius: 15px;
     display: block;
     flex: 0 1 auto; /* Default */
-
-
     /*     transition: background .25s ease-in-out;
         -moz-transition: background .25s ease-in-out;
         -webkit-transition: background .25s ease-in-out;
@@ -150,9 +148,6 @@ b content, body {
         transition: drop-shadow 1.25s ease-in-out;
         -moz-transition: drop-shadow 1.25s ease-in-out;
         -webkit-transition: drop-shadow 1.25s ease-in-out; */
-
-
-
 }
 
 #primary-menu .menu-item:hover {
@@ -225,7 +220,7 @@ nav a:hover, #logo:hover {
     /* background-size: 70% !important; */
     /* background-repeat: no-repeat !important; */
     background-attachment: fixed !important;
-    background-image: url('https://atphband.com/wp-content/uploads/2021/10/grey2ATPHlogo.gif'),  url('https://data.1freewallpapers.com/detail/stars-glare-black-space.jpg') !important;
+    background-image: url('https://atphband.com/wp-content/uploads/2021/10/grey2ATPHlogo.gif'), url('https://data.1freewallpapers.com/detail/stars-glare-black-space.jpg') !important;
     background-size: 60%, 100px !important;
     background-repeat: no-repeat, repeat !important;
 }
@@ -256,10 +251,52 @@ nav a:hover, #logo:hover {
         margin-left: -10%;
     }
 
+    #smobile-menu {
+        width: 100%;
+    }
+
     #masthead {
 
         margin-top: 10px;
         /*         margin-bottom: 50px; */
+    }
+
+    .primary-menu .pmenu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 10%;
+        margin: 10px;
+        padding: 0;
+        border: none !important;
+    }
+
+    #primary-menu .menu-item {
+        margin: 10px;
+    }
+
+    #primary-menu .menu-item {
+
+        border: 0px solid white;
+
+    }
+
+    #h-title-text {
+        font-size: 30px;
+    }
+
+    .header-div {
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+        min-height: 200px !important;
+        height: 200px;
+    }
+
+    #masthead {
+        margin-bottom: -30px;
     }
 
 }

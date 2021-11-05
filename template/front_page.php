@@ -60,23 +60,23 @@ get_header(); ?>
                     <!--                </div>-->
                 </div>
                 <div id="music" class="trans_row">
-<!--                    <span class="section-title">Music</span>-->
-<!--                    <hr>-->
-<!--                    <br/><br/>-->
-<!--                </div>-->
-<!--                <div id="events" class="trans_row">-->
-<!--                    <span class="section-title">Events</span>-->
-<!--                    <hr>-->
-<!--                    <br/><br/>-->
-<!--                </div>-->
-<!--                <div id="bio" class="trans_row">-->
-<!--                    <span class="section-title">Bio</span>-->
-<!--                    <hr>-->
-<!--                </div>-->
-<!--                <div id="members" class="trans_row">-->
-<!--                    <span class="section-title">Members</span>-->
-<!--                    <hr>-->
-<!--                </div>-->
+                    <span class="section-title">Music</span>
+                    <hr>
+                    <br/><br/>
+                </div>
+                <div id="events" class="trans_row">
+                    <span class="section-title">Events</span>
+                    <hr>
+                    <br/><br/>
+                </div>
+                <div id="bio" class="trans_row">
+                    <span class="section-title">Bio</span>
+                    <hr>
+                </div>
+                <div id="members" class="trans_row">
+                    <span class="section-title">Members</span>
+                    <hr>
+                </div>
                 <div id="contact" class="trans_row">
                     <span class="section-title">Contact</span>
                     <hr>
