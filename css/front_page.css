@@ -49,6 +49,13 @@
 }
 
 
+
+.cff-lightbox-dataContainer {
+    min-width: 300px;
+}
+
+
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -256,10 +263,7 @@ hr {
     padding: 6px 3px;
 }
 
-.fb-page {
-    margin-top: 21px;
 
-}
 
 .social_col {
 
@@ -294,7 +298,7 @@ hr {
     margin-left: 2.7px;
 }
  */
-.wdi_photo_wrap, .fb-page {
+.wdi_photo_wrap {
     border: solid 2px #ffffff;
     padding: 0 !important;
 
