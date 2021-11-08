@@ -17,25 +17,19 @@ get_header(); ?>
             <div class="xfront_page">
 
                 <div id="news" class="trans_row">
-                    <span class="section-title">NEWS</span>
-                    <hr><br/><br/>
-                    <?php echo do_shortcode('[masterslider alias="front_news_1"]'); ?>
+                    <span class="section-title"><span class="section-hyphen">--</span>NEWS<span class="section-hyphen">--</span></span>
+                    <div id="mobile-news">
+                    <?php echo do_shortcode('[masterslider alias="mobile-news"]'); ?>
+                    </div>
                 </div>
                 <div id="photos" class="trans_row">
-                    <span class="section-title">PHOTOS</span>
-                    <hr><br/><br/>
-<!--                    dev-->
-<!--                    --><?php //echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
-
-<!--                    prod-->
+                    <span class="section-title"><span class="section-hyphen">--</span>PHOTOS<span class="section-hyphen">--</span></span>
                     <?php echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
-
-
                 </div>
 
                 <div id="social" class="trans_row">
-                    <span class="section-title">Social</span>
-                    <hr>
+                    <span class="section-title"><span class="section-hyphen">--</span>Social<span class="section-hyphen">--</span></span>
+<!--                    <hr>-->
                     <div id="fb_social" class="social_col">
 <!--                        <span class="social-title"><a target="_blank"-->
 <!--                                                      href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses/">-->
@@ -49,38 +43,33 @@ get_header(); ?>
 <!--                        <span class="social-title"><a target="_blank"-->
 <!--                                                      href="https://www.facebook.com/AllThePrettyHorsesBand/">-->
 <!--                                Facebook</a></span><br/>-->
-                        <div class="fb-page" data-href="https://www.facebook.com/AllThePrettyHorsesBand"
-                             data-tabs="timeline" data-width="600" data-height="665" data-small-header="false"
-                             data-colorscheme="dark" data-mobile="false"
-                             data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>
-                    </div>
+<!--                        <div class="fb-page" data-href="https://www.facebook.com/AllThePrettyHorsesBand"-->
+<!--                             data-tabs="timeline" data-width="600" data-height="665" data-small-header="false"-->
+<!--                             data-colorscheme="dark" data-mobile="false"-->
+<!--                             data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>-->
+<!--                    </div>-->
                     <!--                <div id="instagram_social" class="social_col">-->
                     <!--                    <span class="social-title">Instagram</span>-->
                     <!--                    --><?php //echo do_shortcode('[wdi_feed id="1"]'); ?>
                     <!--                </div>-->
                 </div>
                 <div id="music" class="trans_row">
-                    <span class="section-title">Music</span>
-                    <hr>
-                    <br/><br/>
+                    <span class="section-title"><span class="section-hyphen">--</span>Music<span class="section-hyphen">--</span></span>
                 </div>
                 <div id="events" class="trans_row">
-                    <span class="section-title">Events</span>
-                    <hr>
-                    <br/><br/>
+                    <span class="section-title"><span class="section-hyphen">--</span>Events<span class="section-hyphen">--</span></span>
+
                 </div>
                 <div id="bio" class="trans_row">
-                    <span class="section-title">Bio</span>
-                    <hr>
+                    <span class="section-title"><span class="section-hyphen">--</span>Bio<span class="section-hyphen">--</span></span>
+
                 </div>
                 <div id="members" class="trans_row">
-                    <span class="section-title">Members</span>
-                    <hr>
+                    <span class="section-title"><span class="section-hyphen">--</span>Members<span class="section-hyphen">--</span></span>
+
                 </div>
                 <div id="contact" class="trans_row">
-                    <span class="section-title">Contact</span>
-                    <hr>
-                    <br/>
+                    <span class="section-title"><span class="section-hyphen">--</span>Contact<span class="section-hyphen">--</span></span>
                     Please send us a message on
                     <a target="_blank" href="https://www.facebook.com/AllThePrettyHorsesBand">Facebook!</a>
 <!--                    --><?php //echo do_shortcode('[wpforms id="45"]'); ?>
