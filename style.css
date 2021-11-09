@@ -43,7 +43,7 @@ html, body {
 }
 
 #page {
-    max-width: 1300px;
+    /* max-width: 1300px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -55,7 +55,8 @@ b content, body {
 }
 
 .header-div {
-    padding-top: 70px;
+    padding-top: 120px;
+    padding-bottom: 40px;
     min-height: 400px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -86,6 +87,7 @@ b content, body {
     align-items: center;
     display: flex;
     background: rgba(0, 0, 0, 0.7);
+    justify-content: space-between;
 }
 
 .ham-menu {
@@ -96,8 +98,9 @@ b content, body {
 }
 
 
+
 .header-title-container {
-    flex: 1 1 auto;
+    flex: 1 1 center;
 }
 
 .dark-logo-container img {
@@ -111,13 +114,13 @@ b content, body {
     background-color: transparent;
     box-shadow: None;
     min-width: 100%;
-
 }
 
 
 .center-main-menu {
     width: 100%;
     min-width: 100%;
+    background: rgb(0 0 0 / 59%);
 }
 
 .menu-content-wrap, .menu-main-container, .primary-menu {
@@ -148,24 +151,16 @@ b content, body {
 
 
 #primary-menu .menu-item {
-    background-color: #941fa5;
-    border: 1px solid white;
-    border-radius: 15px;
+    /*     background-color: #941fa5;
+        border: 1px solid white;
+        border-radius: 15px; */
     display: block;
-    flex: 0 1 auto; /* Default */
-    /*     transition: background .25s ease-in-out;
-        -moz-transition: background .25s ease-in-out;
-        -webkit-transition: background .25s ease-in-out;
+    flex: 0 1 auto;
 
-        transition: drop-shadow 1.25s ease-in-out;
-        -moz-transition: drop-shadow 1.25s ease-in-out;
-        -webkit-transition: drop-shadow 1.25s ease-in-out; */
 }
 
 #primary-menu .menu-item:hover {
     background-color: #6d1c79;
-    /*     -webkit-filter: drop-shadow(0px 0px 2px #00ff00);
-        filter:drop-shadow(0px 0px 5px #00ff00) */
 }
 
 
@@ -174,22 +169,12 @@ b content, body {
     text-align: center;
 }
 
-.ms-container {
-    text-align: left;
-}
 
 article.fbox {
     box-shadow: None;
     background-color: transparent;
 }
 
-.front_page .entry-header {
-    display: None;
-}
-
-/* footer {
-    display: None !important;
-} */
 
 
 .primary-menu .pmenu, .super-menu.clearfix, #smobile-menu {
@@ -272,11 +257,6 @@ nav a:hover, #logo:hover {
         width: 100%;
     }
 
-    #masthead {
-
-        margin-top: 10px;
-        /*         margin-bottom: 50px; */
-    }
 
     .primary-menu .pmenu {
         display: flex;
@@ -316,13 +296,6 @@ nav a:hover, #logo:hover {
 
 
 
-}
-
-@media all and (max-width: 1304px) {
-    .bottom-header-wrapper img {
-        border-left: none;
-        border-right: none;
-    }
 }
 
 
