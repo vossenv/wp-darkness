@@ -349,7 +349,7 @@ hr {
 
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 580px) {
 
     .bwg-item, .bwg-item img {
         height: 80px !important;

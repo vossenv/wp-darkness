@@ -25,24 +25,27 @@
 
 <div id="page" class="site">
     <header id="masthead" class="sheader site-header clearfix">
+        <div class="trans-row-title">
     <div class="page-title-mobile">
+        <div class="page-title-mobile-inner-container">
+
         <div class="title-logo-mobile">
             <?php if (has_custom_logo()) : ?>
                 <?php the_custom_logo(); ?>
             <?php endif; ?>
         </div>
 
-        <div class="header-title-container">
-            <div id="page-title-text-mobile">Venus DeMars & All The Pretty Horses</div>
-        </div>
+        <div id="page-title-text-mobile">Venus DeMars & All The Pretty Horses</div>
+
         <div class="ham-menu">
             <a href="#" id="pull" class="toggle-mobile-menu menu-toggle" aria-controls="secondary-menu"
                aria-expanded="false"></a>
         </div>
+        </div>
     </div>
 
     <div class="page-title-desktop">
-        <div class="header-title-container">
+        <div class="page-title-desktop-inner-container">
             <div id="page-title-text-desktop">Venus DeMars</div>
             <div class="title-logo-desktop">
                 <?php if (has_custom_logo()) : ?>
@@ -69,7 +72,7 @@
             </div>
         </nav>
     </div>
-
+        </div>
     <div class="header-div" >
         <img id="header-img" src="<?php echo esc_url((get_header_image())); ?>"/>
     </div>

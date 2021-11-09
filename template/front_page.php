@@ -14,12 +14,11 @@ get_header(); ?>
             nonce="GUOYo3aV"></script>
     <div id="primary" class="featured-content content-area">
         <main id="main" class="front_page site-main">
-            <div class="xfront_page">
 
                 <div id="news" class="trans_row">
                     <span class="section-title"><span class="section-hyphen">--</span>NEWS<span class="section-hyphen">--</span></span>
                     <div id="mobile-news">
-                    <?php echo do_shortcode('[masterslider alias="mobile-news"]'); ?>
+                    <?php echo do_shortcode('[masterslider alias="mobile-news-test"]'); ?>
                     </div>
                 </div>
 
@@ -37,37 +36,37 @@ get_header(); ?>
 <!--                             data-tabs="timeline"  data-height="665" data-small-header="false"-->
 <!--                              data-mobile="false"-->
 <!--                             data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="true"></div>-->
-<!--                    </div>-->
+                </div>
 
 
 
                 <div id="music" class="trans_row">
                     <span class="section-title"><span class="section-hyphen">--</span>Music<span class="section-hyphen">--</span></span>
                 </div>
+
                 <div id="events" class="trans_row">
                     <span class="section-title"><span class="section-hyphen">--</span>Events<span class="section-hyphen">--</span></span>
 
                 </div>
+
                 <div id="bio" class="trans_row">
                     <span class="section-title"><span class="section-hyphen">--</span>Bio<span class="section-hyphen">--</span></span>
-
                 </div>
+
                 <div id="members" class="trans_row">
                     <span class="section-title"><span class="section-hyphen">--</span>Members<span class="section-hyphen">--</span></span>
-
                 </div>
 
-                    <div id="photos" class="trans_row">
-                        <span class="section-title"><span class="section-hyphen">--</span>PHOTOS<span class="section-hyphen">--</span></span>
-                        <?php echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
-                    </div>
+                <div id="photos" class="trans_row">
+                    <span class="section-title"><span class="section-hyphen">--</span>PHOTOS<span class="section-hyphen">--</span></span>
+                    <?php echo do_shortcode('[Best_Wordpress_Gallery id="3"]'); ?>
+                </div>
+
                 <div id="contact" class="trans_row">
                     <span class="section-title"><span class="section-hyphen">--</span>Contact<span class="section-hyphen">--</span></span>
                     Please send us a message on
                     <a target="_blank" href="https://www.facebook.com/AllThePrettyHorsesBand">Facebook!</a>
-<!--                    --><?php //echo do_shortcode('[wpforms id="45"]'); ?>
                 </div>
-            </div>
 
         </main><!-- #main -->
     </div><!-- #primary -->
