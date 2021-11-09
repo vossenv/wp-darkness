@@ -25,15 +25,15 @@
 
 <div id="page" class="site">
     <header id="masthead" class="sheader site-header clearfix">
-    <div class="header-inner-mobile">
-        <div class="dark-logo-container">
+    <div class="page-title-mobile">
+        <div class="title-logo-mobile">
             <?php if (has_custom_logo()) : ?>
                 <?php the_custom_logo(); ?>
             <?php endif; ?>
         </div>
 
         <div class="header-title-container">
-            <div id="h-title-text"><b>Venus DeMars & All The Pretty Horses</b></div>
+            <div id="page-title-text-mobile">Venus DeMars & All The Pretty Horses</div>
         </div>
         <div class="ham-menu">
             <a href="#" id="pull" class="toggle-mobile-menu menu-toggle" aria-controls="secondary-menu"
@@ -41,16 +41,15 @@
         </div>
     </div>
 
-    <div class="header-contents">
-        <!--        <div class="dark-logo-container">-->
-        <!--            --><?php //if (has_custom_logo()) : ?>
-        <!--                --><?php //the_custom_logo(); ?>
-        <!--            --><?php //endif; ?>
-        <!--        </div>-->
-
+    <div class="page-title-desktop">
         <div class="header-title-container">
-            <div id="h-title-text"><b>Venus DeMars <span id="title-logo-desktop"><?php the_custom_logo(); ?></span> All The Pretty Horses</b></div>
-
+            <div id="page-title-text-desktop">Venus DeMars</div>
+            <div class="title-logo-desktop">
+                <?php if (has_custom_logo()) : ?>
+                    <?php the_custom_logo(); ?>
+                <?php endif; ?>
+            </div>
+            <div id="page-title-text-desktop">All The Pretty Horses</div>
         </div>
         <nav id="primary-site-navigation" class="primary-menu main-navigation clearfix">
             <a href="#" id="pull" class="smenu-hide toggle-mobile-menu menu-toggle" aria-controls="secondary-menu"
