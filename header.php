@@ -41,8 +41,7 @@
         </div>
     </div>
 
-    <div class="header-div" style="background-image:url(<?php echo esc_url((get_header_image())); ?>)">
-        <div class="header-contents">
+    <div class="header-contents">
         <!--        <div class="dark-logo-container">-->
         <!--            --><?php //if (has_custom_logo()) : ?>
         <!--                --><?php //the_custom_logo(); ?>
@@ -50,7 +49,8 @@
         <!--        </div>-->
 
         <div class="header-title-container">
-            <div id="h-title-text"><b>Venus DeMars<br>&<br>All The Pretty Horses</b></div>
+            <div id="h-title-text"><b>Venus DeMars <span id="title-logo-desktop"><?php the_custom_logo(); ?></span> All The Pretty Horses</b></div>
+
         </div>
         <nav id="primary-site-navigation" class="primary-menu main-navigation clearfix">
             <a href="#" id="pull" class="smenu-hide toggle-mobile-menu menu-toggle" aria-controls="secondary-menu"
@@ -69,7 +69,11 @@
                 </div>
             </div>
         </nav>
-        </div>
+    </div>
+
+    <div class="header-div" >
+        <img id="header-img" src="<?php echo esc_url((get_header_image())); ?>"/>
+    </div>
 
     </header>
 
