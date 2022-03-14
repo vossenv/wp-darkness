@@ -22,6 +22,8 @@ get_header(); ?>
                     Check back very soon for music, news and more!
 <!--                    --><?php //echo do_shortcode('[masterslider id="3"]'); ?>
                 </div>
+
+
 <!--                <div id="photos" class="trans_row">-->
 <!--                    <span class="section-title">PHOTOS</span>-->
 <!--                    <hr><br/><br/>-->

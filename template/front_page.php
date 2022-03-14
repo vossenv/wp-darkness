@@ -18,10 +18,23 @@ get_header(); ?>
                 <div id="news" class="trans_row">
                     <span class="section-title"><span class="section-hyphen">--</span>NEWS<span class="section-hyphen">--</span></span>
                     <div id="mobile-news">
-                    <?php echo do_shortcode('[masterslider alias="mobile-news-test"]'); ?>
+                    <?php echo do_shortcode('[masterslider alias="front-page-news"]'); ?>
                     </div>
                 </div>
 
+            <div id="featured-video" class="trans_row">
+
+<!--                <span class="section-title"><span class="section-hyphen">--</span>Video Release<span class="section-hyphen">--</span></span>-->
+<!--                <h2>ATPH releases new recording and video for <a href="https://www.youtube.com/watch?v=NEaXFAln9E4">Mother Fucker</a></h2>-->
+<!--                <br/>-->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/NEaXFAln9E4?autoplay=1&start=10" title="ATPH - MotherFucker" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <h2>New video release - <a href="https://www.youtube.com/watch?v=NEaXFAln9E4">Mother Fucker</a></h2>
+
+            </div>
 
                 <div id="social" class="trans_row">
 
@@ -29,7 +42,7 @@ get_header(); ?>
 
 <!--                    <a class="social-link" href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses/">Facebook</a>-->
 <!--                    <a class="social-link" href="https://www.instagram.com/atphband/">Instagram</a>-->
-                    <?php echo do_shortcode('[custom-facebook-feed feed=6]'); ?>
+                    <?php echo do_shortcode('[custom-facebook-feed feed=8]'); ?>
 
 <!--                                        <div id="fb_social" class="social_col">-->
 <!--                        <div class="fb-page" data-href="https://www.facebook.com/VenusdeMarsandAllThePrettyHorses"-->
@@ -40,22 +53,22 @@ get_header(); ?>
 
 
 
-                <div id="music" class="trans_row">
-                    <span class="section-title"><span class="section-hyphen">--</span>Music<span class="section-hyphen">--</span></span>
-                </div>
-
-                <div id="events" class="trans_row">
-                    <span class="section-title"><span class="section-hyphen">--</span>Events<span class="section-hyphen">--</span></span>
-
-                </div>
-
-                <div id="bio" class="trans_row">
-                    <span class="section-title"><span class="section-hyphen">--</span>Bio<span class="section-hyphen">--</span></span>
-                </div>
-
-                <div id="members" class="trans_row">
-                    <span class="section-title"><span class="section-hyphen">--</span>Members<span class="section-hyphen">--</span></span>
-                </div>
+<!--                <div id="music" class="trans_row">-->
+<!--                    <span class="section-title"><span class="section-hyphen">--</span>Music<span class="section-hyphen">--</span></span>-->
+<!--                </div>-->
+<!---->
+<!--                <div id="events" class="trans_row">-->
+<!--                    <span class="section-title"><span class="section-hyphen">--</span>Events<span class="section-hyphen">--</span></span>-->
+<!---->
+<!--                </div>-->
+<!---->
+<!--                <div id="bio" class="trans_row">-->
+<!--                    <span class="section-title"><span class="section-hyphen">--</span>Bio<span class="section-hyphen">--</span></span>-->
+<!--                </div>-->
+<!---->
+<!--                <div id="members" class="trans_row">-->
+<!--                    <span class="section-title"><span class="section-hyphen">--</span>Members<span class="section-hyphen">--</span></span>-->
+<!--                </div>-->
 
                 <div id="photos" class="trans_row">
                     <span class="section-title"><span class="section-hyphen">--</span>PHOTOS<span class="section-hyphen">--</span></span>
