@@ -25,10 +25,24 @@ html, body {
     background-color: black !important;
 }
 
+.trans-row-title {
+    margin-left: -5000px;
+    margin-right: -5000px;
+    padding-left: 5000px;
+    padding-right: 5000px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
 
 .site-info a:hover {
     border-bottom: none;
 
+}
+
+.content-wrap {
+    margin: 0;
+    min-width: 100%;
+    width: 100%;
 }
 
 .icons img {
@@ -43,7 +57,7 @@ html, body {
 }
 
 #page {
-    max-width: 1300px;
+    max-width: 1700px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -51,55 +65,73 @@ html, body {
 
 b content, body {
     color: white;
-
 }
 
 .header-div {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 400px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: solid 0px black;
-    height: 550px;
+    text-align: center;
 }
 
-#h-title-text {
+.page-title-desktop {
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-logo-desktop img {
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.title-logo-mobile img {
+    width: 50px;
+    margin-left: 10px;
+}
+
+#page-title-text-desktop {
+    color: #ffffff;
+    font-size: 50px;
+    text-align: center;
+}
+
+#page-title-text-mobile {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 30px;
     color: #ffffff;
     width: 100%;
-    text-align: center;
-    font-size: 60px;
-    line-height: 1;
-    text-shadow: 0 0 13px #000000, 0 0 15px #000000;
+    margin-right: 20px;
 }
 
-
-.header-title-container {
-    flex: 1 1 auto;
+.page-title-mobile-inner-container, .page-title-desktop-inner-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
-.dark-logo-container, .custom-logo-link {
-    padding-left: 50px;
-    display: none;
+.ham-menu {
+    margin-right: 20px;
 }
 
-.dark-logo-container img {
-    height: 300px;
-    width: 300px;
-    -webkit-filter: drop-shadow(0px 0px 50px #000000);
-    filter: drop-shadow(0px 0px 50px #000000)
-
+.ham-menu a {
+    padding: 0;
 }
 
 .top-nav-wrapper {
-    background: none;
-    background-color: transparent;
-    box-shadow: None;
-    min-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.top-nav-wrapper, .page-title-mobile{
+    /*     background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); */
+    background-image: linear-gradient(to right,#9300ff,#008282);
+}
+
+.center-main-menu, .page-title-mobile-inner-container  {
+    background: rgb(0 0 0 / 55%);
 }
 
 
@@ -115,13 +147,13 @@ b content, body {
 
 .menu-main-container {
     /*     padding: 20px; */
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 #masthead {
-    margin-top: 0px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 150px
 }
 
 
@@ -135,26 +167,6 @@ b content, body {
 }
 
 
-#primary-menu .menu-item {
-    background-color: #941fa5;
-    border: 1px solid white;
-    border-radius: 15px;
-    display: block;
-    flex: 0 1 auto; /* Default */
-    /*     transition: background .25s ease-in-out;
-        -moz-transition: background .25s ease-in-out;
-        -webkit-transition: background .25s ease-in-out;
-
-        transition: drop-shadow 1.25s ease-in-out;
-        -moz-transition: drop-shadow 1.25s ease-in-out;
-        -webkit-transition: drop-shadow 1.25s ease-in-out; */
-}
-
-#primary-menu .menu-item:hover {
-    background-color: #6d1c79;
-    /*     -webkit-filter: drop-shadow(0px 0px 2px #00ff00);
-        filter:drop-shadow(0px 0px 5px #00ff00) */
-}
 
 
 .front_page {
@@ -162,22 +174,12 @@ b content, body {
     text-align: center;
 }
 
-.ms-container {
-    text-align: left;
-}
 
 article.fbox {
     box-shadow: None;
     background-color: transparent;
 }
 
-.front_page .entry-header {
-    display: None;
-}
-
-/* footer {
-    display: None !important;
-} */
 
 
 .primary-menu .pmenu, .super-menu.clearfix, #smobile-menu {
@@ -205,106 +207,89 @@ nav a {
     color: #ffffff;
     font-weight: 600;
     font-size: 15px !important;
-    opacity: 1;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-
-nav a:hover, #logo:hover {
-    opacity: 1;
+nav li a:hover {
+    background-color: #ffffff;
+    color: black !important;
 }
+
+
 
 .custom-background {
-    background-position: top 70% center !important;
-    /* background-size: 70% !important; */
-    /* background-repeat: no-repeat !important; */
+    /*     background-position: top 70% center !important; */
     background-attachment: fixed !important;
-    background-image: url('https://atphband.com/wp-content/uploads/2021/10/grey2ATPHlogo.gif'), url('https://data.1freewallpapers.com/detail/stars-glare-black-space.jpg') !important;
-    background-size: 60%, 100px !important;
-    background-repeat: no-repeat, repeat !important;
+    /*background-image: url('https://atphband.com/wp-content/uploads/2021/10/grey2ATPHlogo.gif'), url('https://data.1freewallpapers.com/detail/stars-glare-black-space.jpg') !important;*/
+    background-size: cover !important;
+    background-repeat: repeat !important;
 }
 
 
-#pull, .super-menu-inner {
-    visibility: hidden;
+.page-title-mobile {
+    display:none;
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
-}
 
 @media all and (max-width: 1023px) {
-    #pull, .super-menu-inner {
-        visibility: visible;
+
+    #masthead {
+        margin-bottom: 50px
     }
 
-    .logo-container img, a.custom-logo-link {
-        height: 50px !important;
-        width: 50px;
+
+    .page-title-desktop {
+        display:none;
     }
 
-    #main {
-        width: 120% !important;
-        margin-left: -10%;
+    .page-title-mobile {
+        display:block;
     }
 
     #smobile-menu {
         width: 100%;
     }
 
-    #masthead {
-
-        margin-top: 10px;
-        /*         margin-bottom: 50px; */
-    }
-
     .primary-menu .pmenu {
-        display: flex;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        align-items: stretch;
+        /*         display: flex; */
         flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 10%;
-        margin: 10px;
+        /*         align-items: center; */
+        /* justify-content: space-evenly; */
+        width: 100%;
+        /*         margin: 10px; */
         padding: 0;
         border: none !important;
     }
 
-    #primary-menu .menu-item {
-        margin: 10px;
+    #smobile-menu.show .main-navigation ul li a,  #smobile-menu.show .main-navigation ul li  {
+        text-align: center;
+        width: 100%;
+        border-bottom: none;
     }
 
-    #primary-menu .menu-item {
-
-        border: 0px solid white;
-
+    .menu-main-container {
+        padding: 0;
     }
 
-    #h-title-text {
-        font-size: 30px;
+    .smenu-hide.toggle-mobile-menu.menu-toggle {
+        border: none;
     }
 
     .header-div {
-        background-size: cover;
-        margin-left: auto;
+        margin-left: -5%;
         margin-right: auto;
-        width: 95%;
-        min-height: 200px !important;
-        height: 200px;
-    }
-
-    #masthead {
-        margin-bottom: -30px;
+        width: 110%;
     }
 
 }
 
-@media all and (max-width: 1304px) {
-    .bottom-header-wrapper img {
-        border-left: none;
-        border-right: none;
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
 }
 
@@ -361,6 +346,12 @@ article .entry-content {
     width: auto;
 }
 
+.featured-content {
+    width: 100%;
+    margin: 0;
+    float: unset;
+}
+
 .single-post article {
     background-color: transparent;
 }
@@ -376,4 +367,17 @@ p, h1, h2, h3, h4, h5 {
 
 .copyright {
     color: #941fa5;
+}
+
+.site-footer {
+    margin-left: -20%;
+    margin-right: -20%;
+    width: 140%;
+    background: rgb(0 0 0 / 40%);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer-text {
+    border: none;
 }

@@ -1,0 +1,57 @@
+
+
+
+.header-div {
+    display: none;
+}
+
+.epk-page {
+    margin-bottom: 50px;
+}
+
+.epk-bio {
+    color: black;
+    background-size:cover;
+    padding-top: 60px;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-bottom: 170px;
+    font-size: 28px;
+    line-height: 1.0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bb {
+    font-weight: bold;
+}
+
+#bio-logo {
+    margin-bottom: -40px;
+}
+
+#masthead {
+    margin-bottom: 35px;
+}
+
+
+@media all and (max-width: 1699px) {
+    .epk-bio {
+        font-size: 2vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+}
+
+@media all and (max-width: 1025px) {
+    .epk-bio {
+        font-size: 2vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    #masthead {
+        margin-bottom: 50px;
+    }
+
+}
+

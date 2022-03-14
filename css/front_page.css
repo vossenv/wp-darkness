@@ -42,7 +42,7 @@
     padding-left: 5000px;
     padding-right: 5000px;
     background: rgba(0, 0, 0, 0.4);
-    margin-bottom: 5%;
+    margin-bottom: 15%;
     /*     min-height: 300px; */
     padding-bottom: 20px;
     flex-direction: column;
@@ -98,13 +98,13 @@
 }
 
 .section-title {
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: -0.05em;
     text-transform: uppercase;
     font-weight: 500;
     text-align: center;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .section-hyphen {
@@ -298,7 +298,7 @@ hr {
     margin-left: 2.7px;
 }
  */
-.wdi_photo_wrap {
+.wdi_photo_wrap, .bwg-mosaic-thumb-span {
     border: solid 2px #ffffff;
     padding: 0 !important;
 
@@ -309,6 +309,9 @@ hr {
     -webkit-box-shadow: 0 0 5px var(--box_color);
 }
 
+.bwg-mosaic-thumb-span {
+    margin: 10px;
+}
 /* .tenweb-i  {
     display: none !important;
 }
@@ -321,7 +324,24 @@ hr {
 .bwg-item img {
     object-fit: cover !important;
 }
-@media all and (max-width: 1000px) {
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (max-width: 1023px) {
     .ms-bullet {
         display: block;
     }
@@ -349,13 +369,17 @@ hr {
 
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 580px) {
 
     .bwg-item, .bwg-item img {
         height: 80px !important;
         width: 80px !important;
     }
 
+    .bwg-mosaic-thumb-span img {
+        width: 50px !important;
+        height: unset !important;
+    }
 
 
     .header-div {

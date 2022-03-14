@@ -25,6 +25,7 @@ function custom_upload_mimes ( $existing_mimes=array() ) {
 }
 add_filter('upload_mimes', 'custom_upload_mimes');
 
+add_image_size( 'epk-one', 2500);
 
 //function load_js() {
 //    wp_enqueue_script( 'custom-js', get_stylesheet_directory_uri() . '/js/tp_page.js', array( 'jquery' ),'',true );
