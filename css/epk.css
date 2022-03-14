@@ -7,11 +7,11 @@
 
 .epk-page {
     margin-bottom: 50px;
+    color: black;
+    background-size:cover;
 }
 
 .epk-bio {
-    color: black;
-    background-size:cover;
     padding-top: 60px;
     padding-left: 170px;
     padding-right: 170px;
@@ -19,6 +19,13 @@
     font-size: 28px;
     line-height: 1.0;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.epk-onesheet {
+    min-height: 1000px;
+    padding-top: 200px;
+    padding-left: 50px;
+    display: flex;
 }
 
 .bb {
@@ -31,6 +38,24 @@
 
 #masthead {
     margin-bottom: 35px;
+}
+
+
+.album-title {
+    font-weight: bold;
+}
+.album-image {
+    width: 10vw;
+    border: solid 1px black;
+}
+
+.album-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-info {
+    padding-left: 10px;
 }
 
 
