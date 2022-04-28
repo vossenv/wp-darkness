@@ -34,6 +34,11 @@ get_header(); ?>
     <div id="primary" class="featured-content content-area">
         <main id="main" class="site-main">
 
+            <div class="epk-poster">
+                <a target="_blank" href="<?php echo get_img('ATPH2022Poster.webp'); ?>">
+                    <img  alt="ATPH 2022 Poster" src="<?php echo get_img('ATPH2022Poster.webp'); ?>"/></a>
+<!--                <h2><a href="--><?php //echo get_img('ATPH2022Poster.webp'); ?><!--">New Band Poster</a></h2>-->
+            </div>
             <div class="epk-page epk-onesheet"
                  style="background-image: url('<?php echo get_img('osna.webp'); ?>')">
                 <div class="album-display">
@@ -134,7 +139,18 @@ get_header(); ?>
             <div class="epk-page epk-bio" style="display: none;"
                  style="background-image: url('<?php echo get_img('bio_bg_only.webp'); ?>')">
                 <div id="bio-logo"><?php echo wp_get_attachment_image($sv['pages'][2], "epk-one"); ?></div>
-                <span class="bb">LINKS:</span>
+            </div>
+
+
+
+            <div id="featured-video">
+                <h2>New video release - <a href="https://www.youtube.com/watch?v=NEaXFAln9E4">Mother Fucker</a></h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/NEaXFAln9E4?autoplay=1&start=10&mute=1" title="ATPH - MotherFucker" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+
             </div>
         </main><!-- #main -->
     </div><!-- #primary -->

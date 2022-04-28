@@ -79,10 +79,9 @@
 }
 
 .epk-page a:hover {
-    transition: all 50ms;
-    color: red!important;
-}
-
+     transition: all 50ms;
+     color: red!important;
+ }
 
 #al-10_bones {
     margin-top: 10vw;
@@ -90,6 +89,54 @@
 
 #al-ruin {
     margin-top: 30vw;
+}
+
+#featured-video a, .epk-poster a {
+    text-decoration: none;
+    color: #ff6bd8
+}
+
+#featured-video a:hover, .epk-poster a:hover {
+    color: #fffcfe
+}
+
+#featured-video, .epk-poster {
+    text-align: center;
+}
+
+.top-nav-wrapper {
+    margin-bottom: 0;
+}
+.epk-poster {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.epk-poster img {
+    object-fit: cover;
+}
+
+#masthead {
+    margin-bottom: 0;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 @media all and (min-width: 1700px) {
@@ -126,13 +173,17 @@
 
 
 @media all and (max-width: 1699px) {
+    .epk-poster{
+        margin-left: -2.7vw;
+        margin-right: -2.7vw;
+    }
+
     .epk-bio {
         font-size: 2vw;
         padding-left: 10vw;
         padding-right: 10vw;
         padding-bottom: 10vw;
         padding-top: 10vw;
-
     }
 }
 
@@ -143,9 +194,9 @@
         padding-right: 10vw;
     }
 
-    #masthead {
-        margin-bottom: 15px;
-    }
+    /*#masthead {*/
+    /*    margin-bottom: 15px;*/
+    /*}*/
 
     #bio-logo {
         margin-bottom: 0px;
