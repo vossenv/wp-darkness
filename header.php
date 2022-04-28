@@ -35,7 +35,7 @@
             <?php endif; ?>
         </div>
 
-        <div id="page-title-text-mobile">Venus de Mars & All The Pretty Horses</div>
+            <div id="page-title-text-mobile">Venus de Mars & All The Pretty Horses</div>
 
         <div class="ham-menu">
             <a href="#" id="pull" class="toggle-mobile-menu menu-toggle" aria-controls="secondary-menu"
@@ -46,13 +46,14 @@
 
     <div class="page-title-desktop">
         <div class="page-title-desktop-inner-container">
-            <div id="page-title-text-desktop">Venus de Mars</div>
             <div class="title-logo-desktop">
                 <?php if (has_custom_logo()) : ?>
                     <?php the_custom_logo(); ?>
                 <?php endif; ?>
             </div>
-            <div id="page-title-text-desktop">All The Pretty Horses</div>
+            <div id="page-title-text-desktop">Venus de Mars <span class="and">&</span>  All The Pretty Horses</div>
+
+<!--            <div id="page-title-text-desktop">All The Pretty Horses</div>-->
         </div>
         <nav id="primary-site-navigation" class="primary-menu main-navigation clearfix">
             <a href="#" id="pull" class="smenu-hide toggle-mobile-menu menu-toggle" aria-controls="secondary-menu"

@@ -97,6 +97,10 @@ b content, body {
     text-align: center;
 }
 
+.and {
+    color: #ff6bd8
+}
+
 #page-title-text-mobile {
     font-size: 18px;
     text-align: left;
@@ -309,6 +313,7 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
 
 #entry-content {
     height: 100px !important;
