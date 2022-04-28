@@ -10,7 +10,7 @@ function get_sv($page){
     $sitevars = [
         'dev' => [
             'epk' => [
-                'pages' => [101,99,100],
+                //'pages' => [101,99,100],
                 //'albums' => [102,103,104,105,106,107,108],
             ],
             'front_page' => [
@@ -19,7 +19,7 @@ function get_sv($page){
             ]
         ],
         'prod' => [
-            'epk' => [114,116,117],
+            //'epk' => [114,116,117],
             'front_page' => [
                 'social_id' => '6',
                 'photos_id' => '3',

@@ -6,15 +6,20 @@ $sv = get_sv("epk");
 
 function get_img($name)
 {
-    return get_theme_file_uri("/img/albums/$name");
+    return get_theme_file_uri("/img/epk/$name");
 }
 
-function get_album($name, $info)
+function get_album($name, $info, $url=null)
 {
+    $url = $url ?? "https://open.spotify.com/artist/6ifvVPSqJvJ6vm64wWZ9bu";
+    $id = "al-" . explode('.', $name)[0];
     echo '
         <div class="album-section">
-            <img class="album-image" id=' . $name . ' alt=' . $name . ' src="' . get_img($name) . '"/>
+            <a target="_blank" href="' . $url . '">
+                <img class="album-image" id=' . $id . ' alt=' . $name . ' src="' . get_img($name) . '"/>
+            
             <div class="album-info">' . $info . '</div>
+        </a>
         </div>';
 }
 
@@ -29,38 +34,38 @@ get_header(); ?>
     <div id="primary" class="featured-content content-area">
         <main id="main" class="site-main">
 
+            <div class="epk-page epk-onesheet"
+                 style="background-image: url('<?php echo get_img('osna.webp'); ?>')">
+                <div class="album-display">
+                    <div class="album-col">
+                        <?php
+                        get_album('darkness.jpg', get_album_info("I Think The Darkness", 'LP Skindog - <br/>due release:', 'June 2022'));
+                        get_album('flesh_and_wire.jpg', get_album_info("Flesh and WireLP/CD", 'feat. Laura Jane Grace', 'Skindog -2014'),'https://open.spotify.com/album/29Fj3pzn4JTXtACZ19khiY?fbclid=IwAR0GpONQCq7WMRN3upbZm9zYzRcl01MJPvqKFLNbUKNuKLLdbdAGaIz3agw');
+                        get_album('trashed.jpg', get_album_info("Trashed & <br/>Brokenhearted", '', 'Skindog -2006'),'https://open.spotify.com/playlist/5OlYO1TbMGuK6a63CR9pzz?fbclid=IwAR3iQqEoFs7v5OXYzG5_KHKvvrdwayZ72ga318uor1XNDUwls6v_zDmwWwA');
+                        get_album('creature.jpg', get_album_info("CREATURE", '', 'Skindog -2002'),'https://open.spotify.com/album/4AGWcZ73QiFypZmBKkIIf2?si=BxBCgiDHSfe--Q68TMhsXA');
+                        get_album('dolls.jpg', get_album_info("Dolls With Balls", '', 'Skindog -2001'),'https://open.spotify.com/album/1c5Kq2LrCHFgrqNliQlH9J');
+                        get_album('queens_and_angels.jpg', get_album_info("Queens & Angels", '', 'Twin Tone Records <br/>1998'));
+                        get_album('animal_angst.jpg', get_album_info("Animal Angst(LP)", '', 'Straight Face -1984'));
+                        ?>
+                    </div>
 
-
-            <div class="epk-page epk-onesheet">
-                <div class="epk-one-bg">
-                    <?php echo wp_get_attachment_image($sv['pages'][0], "epk-one"); ?>
-                </div>
-                <div class="album-col-1">
-                    <?php
-                    get_album('darkness.jpg', get_album_info("I Think The Darkness", 'LP Skindog - due release:', 'June 2022'));
-                    get_album('flesh_and_wire.jpg', get_album_info("Flesh and WireLP/CD", 'feat. Laura Jane Grace', 'Skindog -2014'));
-                    get_album('trashed.jpg', get_album_info("Trashed & Brokenhearted", '', 'Skindog -2006'));
-                    get_album('creature.jpg', get_album_info("CREATURE", '', 'Skindog -2002'));
-                    get_album('dolls.jpg', get_album_info("Dolls With Balls", '', 'Skindog -2001'));
-                    get_album('queens_and_angels.jpg', get_album_info("Queens & Angels", '', 'Twin Tone Records -1998'));
-                    get_album('animal_angst.jpg', get_album_info("AnimalAngst(LP)", '', 'Straight Face -1984'));
-                    ?>
-                </div>
-
-                <div class="album-col-2">
-                    <?php
-                    get_album('10_bones.jpg', get_album_info("10BONESLP/CD", '', '10BONESLP/CD'));
-                    get_album('venus_of_mars.jpg', get_album_info("Venusof Mars", 'CD/DVD', 'Skindog -2004'));
-                    get_album('ruin.jpg', get_album_info("Ruin", '', 'Skindog -2000'));
-                    get_album('atph.jpg', get_album_info("A.T.P.H", '', 'Skindog -1995'));
-                    ?>
+                    <div class="album-col">
+                        <?php
+                        get_album('10_bones.jpg', get_album_info("10BONESLP/CD", '', 'Skindog -2012'),'https://open.spotify.com/artist/6ifvVPSqJvJ6vm64wWZ9bu?si=RUCC-jluQt6SwbAVgALspw');
+                        get_album('venus_of_mars.jpg', get_album_info("Venus of Mars", 'CD/DVD', 'Skindog -2004'), 'http://www.venusofmars.com/');
+                        get_album('ruin.jpg', get_album_info("Ruin", '', 'Skindog -2000'),'https://open.spotify.com/album/1Ds4dGLt9bkgRRSQRObxcq?si=orVc3QM5Q4S6Cc4vrAopOg');
+                        get_album('atph.jpg', get_album_info("A.T.P.H", '', 'Skindog -1995'));
+                        ?>
+                    </div>
                 </div>
 
             </div>
 
             <div class="epk-page epk-bio"
-                 style="background-image: url('<?php echo wp_get_attachment_image_url($sv['pages'][1], "epk-one"); ?>')">
-                <div id="bio-logo"><?php echo wp_get_attachment_image($sv['pages'][2], "epk-one"); ?></div>
+                 style="background-image: url('<?php echo get_img('bio_bg_only.webp'); ?>')">
+                <div id="bio-logo">
+                    <img src="<?php echo get_img('logo.webp'); ?>"/>
+                </div>
                 <span class="bb">BIO:</span>
                 <br><br> <i>- Influences: <span class="bb">David Bowie & Sex Pistols</span>, add heavy guitar &
                     outrageous
@@ -126,8 +131,8 @@ get_header(); ?>
             </div>
 
 
-            <div class="epk-page epk-bio"
-                 style="background-image: url('<?php echo wp_get_attachment_image_url($sv['pages'][1], "epk-one"); ?>')">
+            <div class="epk-page epk-bio" style="display: none;"
+                 style="background-image: url('<?php echo get_img('bio_bg_only.webp'); ?>')">
                 <div id="bio-logo"><?php echo wp_get_attachment_image($sv['pages'][2], "epk-one"); ?></div>
                 <span class="bb">LINKS:</span>
             </div>

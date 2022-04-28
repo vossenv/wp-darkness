@@ -235,7 +235,8 @@ nav li a:hover {
 @media all and (max-width: 1023px) {
 
     #masthead {
-        margin-bottom: 50px
+        margin-bottom: 50px;
+        margin-top: 0;
     }
 
 
